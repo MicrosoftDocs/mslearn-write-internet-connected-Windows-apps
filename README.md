@@ -1,3 +1,6 @@
+# Introduction
+
+This code sample is associated with the Microsoft Learn module [Write internet-connected Windows apps](https://docs.microsoft.com/en-us/learn/modules/build-internet-connected-windows10-apps/). Please refer to this documentation for a complete explanation of the code, and how it works.
 
 # Contributing
 
