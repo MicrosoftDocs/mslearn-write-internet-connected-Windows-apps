@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="Astronomy_Picture_of_the_Day_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Astronomy_Picture_of_the_Day_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="Grid" LostFocus="Grid_LostFocus">
+        <Button x:Name="LaunchButton" Content="Go to APOD launch date" HorizontalAlignment="Left" Margin="47,99,0,0" VerticalAlignment="Top" Height="41" Width="308" Click="LaunchButton_Click"/>
+        <Border BorderBrush="Black" HorizontalAlignment="Left" Height="195" Margin="49,172,0,0" VerticalAlignment="Top" Width="306" BorderThickness="1,1,1,1">
+            <CheckBox x:Name="ShowTodaysImageCheckBox" Content="Show today's image on start up" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="9,9,30,200"/>
+        </Border>
+        <CheckBox x:Name="LimitRangeCheckBox" Content="Limit range to current year" HorizontalAlignment="Left" Margin="61,253,0,0" VerticalAlignment="Top" Width="280" Unchecked="LimitRangeCheckBox_Unchecked" Checked="LimitRangeCheckBox_Checked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,311,0,0" Text="Images downloaded today:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="ImagesTodayTextBox" HorizontalAlignment="Left" Margin="242,311,0,0" Text="TextBox" VerticalAlignment="Top" IsReadOnly="True" Background="#FFFFFFC0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="41,476,0,0" Text="Image Credit and Copyright:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="ImageCopyrightTextBox" HorizontalAlignment="Left" Margin="41,500,0,0" Text="TextBox" VerticalAlignment="Top" Width="292" IsReadOnly="True" Background="#FFFFFFC0"/>
+        <TextBlock x:Name="No_Name" HorizontalAlignment="Left" Margin="41,562,0,0" Text="Description:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="DescriptionTextBox" HorizontalAlignment="Left" Margin="41,600,0,0" Text="TextBox" VerticalAlignment="Top" Height="163" Width="1038" Background="#FFFFFFC0" TextWrapping="Wrap"/>
+        <Border x:Name="PictureBorder" BorderBrush="Black" HorizontalAlignment="Left" Height="523" Margin="375,49,0,0" VerticalAlignment="Top" Width="704" BorderThickness="1,1,1,1"/>
+        <Image x:Name="ImagePictureBox" HorizontalAlignment="Left" Height="523" Margin="375,49,0,0" VerticalAlignment="Top" Width="704"/>
+        <CheckBox x:Name="ShowTodaysImageCheckBox1" Content="Show today's image on start up" HorizontalAlignment="Left" Margin="63,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.225,0.5" Width="246" IsChecked="True"/>
+        <CalendarDatePicker x:Name="MonthCalendar" HorizontalAlignment="Left" Margin="49,49,0,0" VerticalAlignment="Top" Width="306" DateChanged="MonthCalendar_DateChanged"/>
+
+    </Grid>
+</Page>

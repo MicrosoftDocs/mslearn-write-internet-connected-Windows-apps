@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="Astronomy_Picture_of_the_Day_UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Astronomy_Picture_of_the_Day_UWP">
+
+</Application>
